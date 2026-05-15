@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getRandom(N, M) {
+      //生成N-M之间的随机数
+      return Math.floor(Math.random() * (M - N + 1)) + N
+    }
+    let random = getRandom(1, 10)
+    let flag = true
+    for (let i = 1; i <= 3; i++) {
+      let num = +prompt('请输入1-10之间的一个数字')
+      if (num > random) {
+        alert('您猜大了')
+      }
+      else if (num < random) {
+        alert('您猜小了')
+      }
+      else {
+        flag = false
+        alert('您猜对了！')
+        break
+      }
+    }
+    if (flag) {
+      alert('次数已用完')
+    }
+  </script>
+</body>
+
+</html>

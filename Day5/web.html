@@ -1,0 +1,228 @@
+以下是一个适合吉他教学文章的网页端排版设计，采用HTML5+CSS3实现，结构清晰、视觉舒适，适合教程类内容展示：
+
+HTML 结构
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吉他即兴犹豫？5步突破指板盲区与和声焦虑</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "微软雅黑", sans-serif;
+      color: #333;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f5f7fa;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      font-weight: 400;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      border-left: 4px solid #3498db;
+      padding-left: 15px;
+      margin-bottom: 30px;
+    }
+
+    .subheading {
+      font-size: 1.4rem;
+      color: #34495e;
+      margin: 25px 0 15px;
+    }
+
+    .list-item {
+      margin-left: 30px;
+      list-style: disc;
+      color: #4a5568;
+    }
+
+    .tip-box {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-style: italic;
+      color: #6c757d;
+    }
+
+    .code-block {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      border-radius: 6px;
+      font-family: monospace;
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 80px;
+      max-width: 280px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+
+    .toc {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .toc-list {
+      list-style: none;
+    }
+
+    .toc-list li {
+      margin: 8px 0;
+    }
+
+    .toc-list a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .toc-list a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 30px 0;
+      color: #7f8c8d;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 侧边栏目录 -->
+    <aside class="sidebar">
+      <div class="toc">目录</div>
+      <ul class="toc-list">
+        <li>一、根源分析：为什么会犹豫？</li>
+        <li>二、分阶段训练：从“敢弹”到“乐弹”</li>
+        <li>三、实战技巧：即兴时的“即时救场”策略</li>
+        <li>四、长期提升：让即兴成为“肌肉记忆”</li>
+      </ul>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main>
+      <div class="header">
+        <h1 class="main-title">吉他即兴犹豫？5步突破指板盲区与和声焦虑</h1>
+        <p class="subtitle">从指板可视化到和声逻辑，附30天训练计划</p>
+      </div>
+
+      <section class="section" id="root-cause">
+        <h2 class="section-title">一、根源分析：为什么会犹豫？</h2>
+        <ul>
+          <li class="list-item">指板“盲区”：对目标调式的指板位置不熟悉，找不到对应把位的音</li>
+          <li class="list-item">和声脱节：不知道当前和弦对应的可用音，或无法快速切换不同和弦的音阶</li>
+          <li class="list-item">素材匮乏：缺乏即兴乐句积累，大脑“空白”，不知如何开始</li>
+          <li class="list-item">完美主义：过度纠结“对错”，不敢弹出第一音，或频繁中断修正</li>
+        </ul>
+      </section>
+
+      <section class="section" id="stage-training">
+        <h2 class="section-title">二、分阶段训练：从“敢弹”到“乐弹”</h2>
+        <div class="subheading">1. 夯实底层：让指板“可视化”</div>
+        <p>目标：5分钟内快速反应任意调式的指板位置（以C大调五声音阶为例）。</p>
+        <div class="tip-box">
+          <strong>练习法推荐：</strong><br>
+          爬格子变种：用“1-3-5-7”根音+三度音+五度音+七度音的方式爬格子，强化和弦音记忆（如Cmaj7的C-E-G-B）
+        </div>
+
+        <div class="subheading">2. 和声绑定：让音阶“有逻辑”</div>
+        <p>目标：听到和弦立刻反应出3个核心选择（调式音阶/琶音彩音）。</p>
+        <pre class="code-block">
+// 固定和弦循环练习示例（C-F-G）
+function chordLoopPractice() {
+    let chords = ['C', 'F', 'G'];
+    chords.forEach(chord => {
+        playArpeggio(chord); // 先弹琶音
+        connectScale(chord); // 再连接音阶
+    });
+}
+                </pre>
+      </section>
+
+      <section class="section" id="practical-skills">
+        <h2 class="section-title">三、实战技巧：即兴时的“即时救场”策略</h2>
+        <ol>
+          <li class="list-item">重复即力量：重复上一个小节的动机，通过重复自然引出变化</li>
+          <li class="list-item">回归根音：弹当前和弦的根音+五音（如G和弦弹G和D），配合扫弦节奏过渡</li>
+          <li class="list-item">动态变化：用音量、拨弦力度或效果器掩盖犹豫，如从轻柔弹奏突然加大力度</li>
+        </ol>
+      </section>
+
+      <section class="section" id="long-term">
+        <h2 class="section-title">四、长期提升：让即兴成为“肌肉记忆”</h2>
+        <div class="image-container">
+          < img src="https://example.com/guitar-practice-plan.jpg" alt="30天训练计划示意图">
+        </div>
+        <p>每日15分钟专项：每天固定时间练一个主题（如周一练A调五声音阶模进，周二练G调属七琶音连接），避免贪多。</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 吉他研习社 | 转载请注明出处</p>
+    </footer>
+  </div>
+</body>
+
+</html>

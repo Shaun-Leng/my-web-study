@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let arr = ['pink', 'red', 'blue']
+    // for (let k in arr) {
+    //   console.log(k) //数组下标
+    // }
+
+    //1.遍历对象 for in
+    let obj = {
+      uname: 'pink',
+      age: 18,
+      gender: '男'
+    }
+
+    //2.遍历对象
+    for (let k in obj) {
+      console.log(k) //获得对象属性 字符串 'uname' 'age'
+      console.log(obj[k]) // 获得对象属性值 'uname' === k
+    }
+  </script>
+</body>
+
+</html>
