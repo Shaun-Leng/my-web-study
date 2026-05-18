@@ -9,10 +9,14 @@
     <input type="text">
     <script>
         const input = document.querySelector('input')
-        input.addEventListener('input', function(){
-            console.log(input.value);
-        })        
- 
+        input.addEventListener('keyup', function(e){
+            // console.log(e.key)
+            if (e.key === 'Enter'){
+                console.log('回车键')
+                
+            }
+            
+        })
     </script>
 </body>
 </html>
